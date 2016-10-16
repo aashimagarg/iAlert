@@ -38,6 +38,9 @@ public class LoginActivity extends AppCompatActivity {
     private static final String EMAIL = "email";
     private static final String FRIENDS = "user_friends";
     private static final String PROFILE = "public_profile";
+    private static final String POSTS = "user_posts";
+    private static final String STATUS = "user_status";
+    private static final String PHOTOS = "user_photos";
 
     private CallbackManager callbackManager;
     private FirebaseAuth auth;
@@ -70,17 +73,9 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         //set views
         LoginButton lbLogin = (LoginButton) findViewById(R.id.btn_login);
-//        ImageView ivBackground = (ImageView) findViewById(R.id.iv_background);
-//        TextView tvTagLine = (TextView) findViewById(R.id.tv_tagline);
-        //set font
-//        tvTagLine.setTypeface(Typeface.createFromAsset(getAssets(), "fonts/Montserrat_Regular.ttf"));
-        //upload photo and add black tint
-//        ivBackground.setImageResource(R.drawable.background_cupcake);
-//        ivBackground.setScaleType(ImageView.ScaleType.CENTER_CROP);
-//        ivBackground.setColorFilter(Color.argb(120, 0, 0, 0));
         //removes facebook automated pop in
         lbLogin.setToolTipMode(LoginButton.ToolTipMode.NEVER_DISPLAY);
-        lbLogin.setReadPermissions(EMAIL, FRIENDS, PROFILE);
+        lbLogin.setReadPermissions(EMAIL, FRIENDS, PROFILE, POSTS, STATUS, PHOTOS);
         lbLogin.registerCallback(callbackManager, callback);
         //set authentication listener
         authListener = new FirebaseAuth.AuthStateListener() {
@@ -116,6 +111,7 @@ public class LoginActivity extends AppCompatActivity {
         }
         super.onStop();
     }
+
 
     private void handleFacebookAccessToken(AccessToken token) {
         Log.d(TAG, "handleFacebookAccessToken:" + token);

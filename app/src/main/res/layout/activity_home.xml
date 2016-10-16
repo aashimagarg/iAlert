@@ -29,6 +29,12 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ListView
+        android:id="@+id/lvFriends"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:layout_gravity="bottom" />
 
 </android.support.design.widget.CoordinatorLayout>
