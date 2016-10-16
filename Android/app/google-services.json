@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "881037807208",
+    "firebase_url": "https://ialert-22840.firebaseio.com",
+    "project_id": "ialert-22840",
+    "storage_bucket": "ialert-22840.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:881037807208:android:701f3f0cb8319443",
+        "android_client_info": {
+          "package_name": "com.ialert.ialert"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "881037807208-6vao8f71sjl7ar2ecuguqejltkdo7ffp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSC30lKQ1o11T_xSThk_CyTq87Xp-SH_4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
