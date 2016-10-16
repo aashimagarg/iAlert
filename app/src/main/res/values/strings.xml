@@ -2,7 +2,7 @@
     <string name="app_name">iAlert</string>
     <string name="facebook_app_id">1834140390164446</string>
     <string name="error">Error:&#160;</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_activity_home">iAlert Top Friends</string>
     <string name="no_posts">You have no posts</string>
     <string name="no_likers">This post has no likers</string>
 </resources>
